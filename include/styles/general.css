@@ -1,11 +1,14 @@
 @import "buttons.css";
+@import "forms.css";
 @import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 
 /* Customize the web's scrollbar */
 /* Works on Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: #000000b0 #fcebd6d2;
+  box-sizing: border-box;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -32,31 +35,34 @@ body, html {
   height: 100%;
   margin: 0;
   background-color: #06121e;
-  overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
 }
 
 header {
   position: fixed;
-  background-color: #2f0a61;
-  padding: 1.25% 9% 0.5%;
+  background-color: transparent;
+  padding-right: 3%;
   top: 0;
-  height: 35px;
+  transition: all 0.4s ease-in-out;
+  height: 50px;
   width: 100%;
   color: white;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.35);
-  z-index: 3;
+  z-index: 100;
+}
+
+header .active {
+  background-color: #2f0a61;
 }
 
 footer {
-  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 5% 9% 5% 9%;
-  margin-bottom: -150px;
-  height: 150px;
+  padding: 5% 5% 5% 9%;
+  margin-top: 3vw;
+  height: max-content;
   font-size: 2.5vw;
   width: 100%;
   word-break: break-all;
@@ -64,6 +70,7 @@ footer {
   background-image: linear-gradient(rgba(11, 9, 119, 0.5), rgba(11, 9, 158, 0.5)), url("../images/footer.avif");
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 100;
 }
 
 footer ul li {
@@ -81,9 +88,12 @@ footer div a:hover {
 }
 
 .brandName {
+  position: fixed;
   color: yellow;
   cursor: pointer;
   letter-spacing: 5px;
+  margin-left: 9%;
+  margin-top: 10px;
   text-transform: uppercase;
   font-weight: bold;
   font-family: 'Bangers', cursive;
@@ -103,13 +113,23 @@ footer div a:hover {
 
 .toolBar {
   display: grid;
-  float: inline-end;
-  grid-template-columns: repeat(9, 1fr);
+  float: left;
+  width: 40%;
+  margin-left: 23%;
+  grid-template-columns: repeat(6, 1fr);
 }
 
-
-
-
+.sitelogo {
+  position: fixed;
+  cursor: pointer;
+  margin-left: 5.9%;
+  margin-top: 3px;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 @media screen and (min-width: 850px) {
   footer {
@@ -120,6 +140,7 @@ footer div a:hover {
 @media screen and (max-width: 300px) {
   footer {
     font-size: 3vw;
+    padding-bottom: 10%;
   }
 }
 
