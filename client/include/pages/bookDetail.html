@@ -1,14 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details</title>
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/books.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../images/logo.png">
+    <!-- Replace title by book name -->
+    <title>Phía Tây không có gì lạ</title>
 </head>
 
 <body>
+    <include src="./header.html"></include>
+    <div class="bookDetails">
+        <div class="large-cover"></div>
+        <div class="book-view-container">
+            <div class="column book-view-left">
+                <div class="book-cover"><img src="../images/demoBookCover1.jpg"></div>
+                <button id="readBtn" class="readBtn" role="link">ĐỌC SÁCH</button>
+            </div>
+            <div class="column book-view-right">
+                <h1 class="book-name">All Quiet on the Western Front</h1>
+                <h2 class="book-name-translated">Phía Tây không có gì lạ <span class="release-year">(2022)</span></h2>
+                <a class="rating-stars" href="#ratingDetails">
+                    <span class="fa fa-star checked-star"></span>
+                    <span class="fa fa-star checked-star"></span>
+                    <span class="fa fa-star checked-star"></span>
+                    <span class="fa fa-star checked-star"></span>
+                    <span class="fa fa-star"></span>&nbsp;
+                    <div class="average-rating-point">4.1</div>
+                </a><br>
+                <button class="share-to-fb"><i class="fab fa-facebook-square"></i> &nbsp;Chia sẻ</button>
+                <button class="add-to-collection"><i class="fas fa-plus"></i> &nbsp;Bộ sưu tập</button>
+                <div class="genre-tag-list">
+                    <a class="genre-tag">Phiêu lưu</a>
+                    <a class="genre-tag">Lịch sử</a>
+                </div>
 
+                <table class="book-details-table">
+                    <tr>
+                        <th>TÁC GIẢ</th>
+                        <td>&emsp;Edward Berger</td>
+                    </tr>
+                    <tr>
+                        <th>DỊCH GIẢ</th>
+                        <td>&emsp;Caydenthan</td>
+                    </tr>
+                    <tr>
+                        <th>XUẤT BẢN</th>
+                        <td>&emsp;10/7/2022</td>
+                    </tr>
+                    <tr>
+                        <th>TÁI BẢN</th>
+                        <td>&emsp;Lần thứ 2</td>
+                    </tr>
+                </table>
+
+                <div class="book-description">
+                    Khi thiếu niên 17 tuổi Paul tham gia Mặt trận phía Tây trong Thế chiến I, niềm phấn khích ban đầu
+                    của cậu sớm vỡ vụn
+                    trước thực tế nghiệt ngã của cuộc sống nơi chiến hào.
+                </div>
+
+                <h2>Đánh giá của người đọc</h2>
+                <div id="ratingDetails" class="rating-details">
+                    <div class="side">
+                        <div>5 sao</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                            <div class="bar-5"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>150</div>
+                    </div>
+                    <div class="side">
+                        <div>4 sao</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                            <div class="bar-4"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>63</div>
+                    </div>
+                    <div class="side">
+                        <div>3 sao</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                            <div class="bar-3"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>15</div>
+                    </div>
+                    <div class="side">
+                        <div>2 sao</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                            <div class="bar-2"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>6</div>
+                    </div>
+                    <div class="side">
+                        <div>1 sao</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                            <div class="bar-1"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>20</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <include src="./footer.html"></include>
+
+    <script>
+        // include html files
+        (() => {
+            const includes = document.getElementsByTagName('include');
+            [].forEach.call(includes, i => {
+                let filePath = i.getAttribute('src');
+                fetch(filePath).then(file => {
+                    file.text().then(content => {
+                        i.insertAdjacentHTML('afterend', content);
+                        i.remove();
+                    });
+                });
+            });
+        })();
+
+        // scroll to the book cover cho đẹp
+        window.scrollTo({ left: 0, top: 200, behavior: "smooth" });
+
+        // header's change color effect
+        var scrollTrigger = 250; // other pages may different
+
+        window.onscroll = function () {
+            if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+                document.getElementsByTagName("header")[0].style.backgroundColor = "#2f0a61";
+            } else {
+                document.getElementsByTagName("header")[0].style.backgroundColor = "";
+            }
+        };
+    </script>
 </body>
 
 </html>
