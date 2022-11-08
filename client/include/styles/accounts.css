@@ -1,0 +1,9 @@
+.bg {
+    background-color: #06121e;
+}
+
+.btn-sub {
+    background-color: #ffe08a;
+    border-color: transparent;
+    color: rgba(0, 0, 0, .7);
+}
