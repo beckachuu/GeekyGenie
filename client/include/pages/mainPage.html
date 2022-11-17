@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/mainPage.css">
+    <link rel="icon" href="../images/logo.png">
     <title>GeekyGenie</title>
 </head>
 <body>
+    <include src="./header.html"></include>
     <div id="wrapper">
         <div class="search-field">
             <div class="field">
@@ -144,7 +146,7 @@
                 </div>
             </li>
             <li>
-                <div class="product-item is-hidden-fullhd">
+                <div class="product-item is-hidden-fullhd is-hidden-tablet">
                     <div class="product-top">
                         <a href="" class="product-thumb">
                             <img src="../images/mainPage/book7.jpg" alt="">
@@ -157,7 +159,7 @@
                 </div>
             </li>
             <li>
-                <div class="product-item is-hidden-fullhd">
+                <div class="product-item is-hidden-fullhd is-hidden-tablet">
                     <div class="product-top">
                         <a href="" class="product-thumb">
                             <img src="../images/mainPage/book8.jpg" alt="">
@@ -443,5 +445,31 @@
             </li>
         </ul>
     </div>
+    <include src="./footer.html"></include>
+
+    <script>
+        (() => {
+            const includes = document.getElementsByTagName('include');
+            [].forEach.call(includes, i => {
+                let filePath = i.getAttribute('src');
+                fetch(filePath).then(file => {
+                    file.text().then(content => {
+                        i.insertAdjacentHTML('afterend', content);
+                        i.remove();
+                    });
+                });
+            });
+        })();
+
+        var scrollTrigger = 30;
+
+        window.onscroll = function () {
+            if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+                document.getElementsByTagName("header")[0].style.backgroundColor = "#2f0a61";
+            } else {
+                document.getElementsByTagName("header")[0].style.backgroundColor = "";
+            }
+        };
+    </script>
 </body>
 </html>

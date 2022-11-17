@@ -11,7 +11,7 @@ body {
 }
 #wrapper {
     max-width: 1300px;
-    margin: 130px auto 0px;
+    margin: 90px auto 0px;
 }
 .search-field {
     display: flex;
@@ -55,19 +55,20 @@ ul.products li img{
 .is-medium.input {
     display: block;
     font-size: 1.25rem;
-    padding: 10px 15px;
+    padding: 15px;
     margin-bottom: 20px;
     border-radius: 5px;
     max-width: 99%;
     width: 100%;
+    border: 1px solid transparent;
 }
 .is-medium.input:focus {
     outline: 0;
     border: 1px solid #428bca;
 }
-::placeholder {
+.is-medium.input::placeholder {
     color: #C0C0C0;
-    font-size: 18px;
+    font-size: 20px;
 }
 @media screen and (min-width:1024px) and (max-width:1300px) {
     ul.products {
@@ -77,7 +78,7 @@ ul.products li img{
         flex-basis: 25%;
     }
     #wrapper {
-        margin: 130px 40px 0px;
+        margin: 90px 40px 0px;
     }
 }
 @media screen and (min-width:769px) and (max-width:1023px) {

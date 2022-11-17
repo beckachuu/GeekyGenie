@@ -13,7 +13,7 @@ body {
 }
 #wrapper {
     max-width: 1300px;
-    margin: 130px auto 0px;
+    margin: 90px auto 0px;
 }
 h2 {
     font-size: 24px;
@@ -132,7 +132,7 @@ select:focus {
         flex-basis: 25%;
     }
     #wrapper {
-        margin: 130px 40px 0px;
+        margin: 90px 40px 0px;
     }
 }
 @media screen and (min-width:769px) and (max-width:1023px) {
