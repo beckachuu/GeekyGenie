@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="icon" href="../images/logo.png">
     <title>Tìm kiếm sách</title>
 </head>
@@ -13,7 +14,30 @@
     <div id="wrapper">
         <div class="search-field">
             <input type="text" class="input is-medium" placeholder="Nhập tên phim..." value>
+            <button id="btn-open"><i class="fa-regular fa-image"></i></button>
         </div>
+        <!-- Popup -->
+        <div id="searchImg-container" class="">
+            <div id="searchImg">
+                <div class="searchImg-header">
+                    <h3>Tìm kiếm sách bằng hình ảnh</h3>
+                    <button id="btn-close"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="searchImg-body">
+                    <div id="imgFile">
+                        <span class="iconImg"><i class="fa-sharp fa-solid fa-images"></i></span>
+                        <span class="header">Drag an image here or</span>
+                        <span class="button"> upload a file</span>
+                    </div>
+                    <div class="is-divider"><span>OR</span></div>
+                    <div id="imgLink">
+                        <input type="text" placeholder="Paste image link">
+                        <button name="search" value="search">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Popup -->
         <ul class="products">
             <li>
                 <div class="product-item">
@@ -432,6 +456,24 @@
                 document.getElementsByTagName("header")[0].style.backgroundColor = "";
             }
         };
+
+        const btn_open = document.getElementById("btn-open");
+        const btn_close = document.getElementById("btn-close");
+        const searchImg_container = document.getElementById("searchImg-container");
+        const searchImg = document.getElementById("searchImg");
+
+        btn_open.addEventListener('click', ()=> {
+            searchImg_container.classList.add("show");
+        });
+        btn_close.addEventListener('click', ()=> {
+            searchImg_container.classList.remove("show");
+        });
+
+        searchImg_container.addEventListener("click", (e)=> {
+            if(!searchImg.contains(e.target)) {
+                btn_close.click();
+            }
+        })
     </script>
 </body>
 </html>
