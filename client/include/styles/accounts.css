@@ -10,3 +10,10 @@
 .icon-edit:hover {
   color: #ffe08a !important;
 }
+.icon {
+  display: none;
+}
+
+.image:hover .icon {
+  display: block;
+}

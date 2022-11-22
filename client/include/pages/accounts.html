@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Account</title>
-    <!-- CSS only -->
+    <title>Document</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -16,185 +15,260 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../styles/authorDetail.css" />
     <link rel="stylesheet" href="../styles/accounts.css" />
   </head>
-
   <body>
     <include src="./header.html"></include>
-    <!-- <div class="fw-bold">Header</div> -->
-    <div class="container">
-      <div class="account bg vh-100 mx-auto" style="max-width: 40vw">
-        <div class="pt-5 pb-2">
-          <div class="text-white fs-3 text-center">
-            Customer Name
-            <button
-              data-bs-toggle="modal"
-              data-bs-target="#edit"
-              style="background-color: transparent"
-            >
-              <i class="fa-solid fa-pen-to-square text-white icon-edit"></i>
-            </button>
-          </div>
-          <br />
-          <div class="text-white py-2 fs-5">
-            Ngày gia nhập : <span class="fw-bold">10/10/2022</span>
-          </div>
-          <div class="text-white py-2 fs-5">
-            Ngày sinh : <span class="fw-bold">10/10/2022</span>
-          </div>
-          <div class="text-white py-2 fs-5">
-            Giới tính : <span class="fw-bold">Nam</span>
-          </div>
-          <div class="text-white py-2 fs-5">
-            Số Điện Thoại : <span class="fw-bold">01234567890</span>
-          </div>
-          <div class="text-white py-2 fs-5">
-            Email : <span class="fw-bold">abc@gmail.com</span>
-          </div>
-        </div>
-        <div class="text-center mt-2 pb-3">
-          <button
-            type="button"
-            class="btn-sub px-3 py-1"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            Kích hoạt VIP mode
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="modal fade"
-      id="edit"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">
-              Sửa Thông Tin
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1"
-                >Họ Và Tên:
-              </span>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Họ Và Tên"
-                aria-label="Username"
-                aria-describedby="basic-addon1"
-                value="Customer Name"
+    <div class="body mt-5">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-12 col-md-3 text-white">
+            <div class="p-3">
+              <img
+                src="https://i.pinimg.com/736x/6a/29/8d/6a298df72cb446bdf65891b846374079.jpg"
+                class="w-100"
               />
             </div>
-            <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1"
-                >Số Điện Thoại:
-              </span>
-              <input
-                type="number"
-                class="form-control"
-                placeholder="Số Điện Thoại: "
-                aria-label=""
-                aria-describedby="basic-addon1"
-                value="0123456789"
-              />
+            <div class="p-3">
+              <div class="fw-bold text-center fs-4">
+                Thông tin cá nhân
+                <i
+                  class="fa-solid fa-pen-to-square"
+                  style="color: #fbc634; cursor: pointer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                ></i>
+              </div>
+              <div class="px-1 mt-3">
+                <div class="fw-bold">Nghề Nghiệp</div>
+                <div style="color: #999">Biên Kịch</div>
+              </div>
+              <div class="px-1 mt-3">
+                <div class="fw-bold">Giới Tính</div>
+                <div style="color: #999">Nam</div>
+              </div>
+              <div class="px-1 mt-3">
+                <div class="fw-bold">Ngày Sinh</div>
+                <div style="color: #999">10/10/2000</div>
+              </div>
+              <div class="px-1 mt-3">
+                <div class="fw-bold">Nơi Sinh</div>
+                <div style="color: #999">Đoán xem</div>
+              </div>
             </div>
-            <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1">Email: </span>
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Email: "
-                aria-label=""
-                aria-describedby="basic-addon1"
-                value="abc@gmail.com"
-              />
+          </div>
+          <div class="col-12 col-md-9 text-white">
+            <div class="fs-1 fw-bold">George R. R. Martin</div>
+            <div class="fw-bold mt-4">Giới Thiệu</div>
+            <div style="color: #999" class="mt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              similique deserunt sapiente, quos a delectus veritatis pariatur,
+              dolorem alias non dolores repudiandae, eaque eum praesentium
+              provident velit? Quibusdam, magnam recusandae? Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Ullam similique deserunt
+              sapiente, quos a delectus veritatis pariatur, dolorem alias non
+              dolores repudiandae, eaque eum praesentium provident velit?
+              Quibusdam, magnam recusandae? Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Ullam similique deserunt sapiente,
+              quos a delectus veritatis pariatur, dolorem alias non dolores
+              repudiandae, eaque eum praesentium provident velit? Quibusdam,
+              magnam recusandae?
             </div>
-            <div class="mb-3 d-flex">
-              <span class="input-group-text" id="basic-addon1"
-                >Giới Tính:
-              </span>
-              <div class="d-flex align-items-center ms-3">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="gender"
-                    id="male"
+            <div class="fw-bold mt-4">Các tác phẩm</div>
+            <div class="row mt-2">
+              <div class="col-12 col-md-3">
+                <div class="position-relative image">
+                  <img
+                    src="https://taimienphi.vn/tmp/cf/aut/0jRR-odmp-K3i2-8y3Q-w1jw-aKXX-BfHP-hinh-nen-1.jpg"
+                    class="w-100"
                   />
-                  <label class="form-check-label" for="male">
-                    Nam
-                  </label>
+                  <span
+                    class="position-absolute icon"
+                    style="top: 10px; right: 15px; cursor: pointer"
+                    onclick="confirmDelete()"
+                  >
+                    <i class="fa-solid fa-trash rating-color"></i>
+                  </span>
                 </div>
-                <div class="form-check  ms-3">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="gender"
-                    id="female"
-                    checked
+                <div style="color: #999" class="text-center mt-2">
+                  <div class="ratings">
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  Tác Phẩm 1
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="position-relative image">
+                  <img
+                    src="https://taimienphi.vn/tmp/cf/aut/0jRR-odmp-K3i2-8y3Q-w1jw-aKXX-BfHP-hinh-nen-1.jpg"
+                    class="w-100"
                   />
-                  <label class="form-check-label" for="female">
-                    Nữ
-                  </label>
+                  <span
+                    class="position-absolute icon"
+                    style="top: 10px; right: 15px; cursor: pointer"
+                    onclick="confirmDelete()"
+                  >
+                    <i class="fa-solid fa-trash rating-color"></i>
+                  </span>
+                </div>
+                <div style="color: #999" class="text-center mt-2">
+                  <div class="ratings">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  Tác Phẩm 2
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="position-relative image">
+                  <img
+                    src="https://taimienphi.vn/tmp/cf/aut/0jRR-odmp-K3i2-8y3Q-w1jw-aKXX-BfHP-hinh-nen-1.jpg"
+                    class="w-100"
+                  />
+                  <span
+                    class="position-absolute icon"
+                    style="top: 10px; right: 15px; cursor: pointer"
+                    onclick="confirmDelete()"
+                  >
+                    <i class="fa-solid fa-trash rating-color"></i>
+                  </span>
+                </div>
+                <div style="color: #999" class="text-center mt-2">
+                  <div class="ratings">
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  Tác Phẩm 3
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="position-relative image">
+                  <img
+                    src="https://taimienphi.vn/tmp/cf/aut/0jRR-odmp-K3i2-8y3Q-w1jw-aKXX-BfHP-hinh-nen-1.jpg"
+                    class="w-100"
+                  />
+                  <span
+                    class="position-absolute icon"
+                    style="top: 10px; right: 15px; cursor: pointer"
+                    onclick="confirmDelete()"
+                  >
+                    <i class="fa-solid fa-trash rating-color"></i>
+                  </span>
+                </div>
+                <div style="color: #999" class="text-center mt-2">
+                  <div class="ratings">
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  Tác Phẩm 4
                 </div>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Đóng 
-            </button>
-            <button type="button" class="btn btn-primary">Lưu</button>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Chỉnh Sửa Thông Tin
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="form-floating mb-3">
+                <input
+                  type="file"
+                  class="form-control"
+                  id="floatingInputGrid"
+                  value="George R. R. Martin"
+                />
+                <label for="floatingInputGrid">Avatar</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInputGrid"
+                  value="George R. R. Martin"
+                />
+                <label for="floatingInputGrid">Họ Và Tên</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInputGrid"
+                  value="introoo"
+                />
+                <label for="floatingInputGrid">Intro</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInputGrid"
+                  value="Biên Kịch "
+                />
+                <label for="floatingInputGrid">Nghề Nghiệp</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInputGrid"
+                  value="Hà Nội "
+                />
+                <label for="floatingInputGrid">Nơi Sinh</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="date"
+                  class="form-control"
+                  id="floatingInputGrid"
+                  value="10/10/2000"
+                />
+                <label for="floatingInputGrid">Ngày Sinh</label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -232,6 +306,10 @@
           document.getElementsByTagName("header")[0].style.backgroundColor = "";
         }
       };
+
+      function confirmDelete() {
+        confirm("Xác Nhận Xóa ");
+      }
     </script>
     <!-- JavaScript Bundle with Popper -->
     <script
