@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" href="../images/logo.png">
+    <title>Tìm kiếm sách</title>
+</head>
+<body>
+    <include src="./header.html"></include>
+    <div id="wrapper">
+        <div class="search-field">
+            <input type="text" class="input is-medium" placeholder="Nhập tên phim..." value>
+            <button id="btn-open"><i class="fa-regular fa-image"></i></button>
+        </div>
+        <!-- Popup -->
+        <div id="searchImg-container" class="">
+            <div id="searchImg">
+                <div class="searchImg-header">
+                    <h3>Tìm kiếm sách bằng hình ảnh</h3>
+                    <button id="btn-close"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="searchImg-body">
+                    <div id="imgFile">
+                        <span class="iconImg"><i class="fa-sharp fa-solid fa-images"></i></span>
+                        <span class="header">Drag an image here or</span>
+                        <span class="button"> upload a file</span>
+                    </div>
+                    <div class="is-divider"><span>OR</span></div>
+                    <div id="imgLink">
+                        <input type="text" placeholder="Paste image link">
+                        <button name="search" value="search">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Popup -->
+        <ul class="products">
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Phía Tây không có gì lạ</a>
+                        <a href="" class="product-author">Edward Berger</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Gia Tộc Rồng</a>
+                        <a href="" class="product-author">Ryan Condal</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Bỗng dưng trúng số</a>
+                        <a href="" class="product-author">Park Gyu-tae</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Chúa tể những chiếc nhẫn</a>
+                        <a href="" class="product-author">Patrick Mckay</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Nữ khổng lồ xanh: Luật sư</a>
+                        <a href="" class="product-author">Jessica Gao</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book6.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Cười</a>
+                        <a href="" class="product-author">Parker Finn</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Cho tôi ăn</a>
+                        <a href="" class="product-author">Richard Oakes</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book8.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Bậc thầy bóng tối</a>
+                        <a href="" class="product-author">Pearry Reginald Teo</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book9.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Kế hoạch săn sói</a>
+                        <a href="" class="product-author">Kim Hong-seon</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book10.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">BlackAdam</a>
+                        <a href="" class="product-author">BlackAdam</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book11.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Cự Đà Triệu Baht</a>
+                        <a href="" class="product-author">Leio</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book12.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Chiếm quyền</a>
+                        <a href="" class="product-author">The Takeover</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book13.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Nhà Có Năm Nàng Dâu</a>
+                        <a href="" class="product-author">Masato Jimbo</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book14.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Thần Thám Đại Chiến</a>
+                        <a href="" class="product-author">Detective vs. Sleuths</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book15.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Đoạn Băng Kinh Hoàng 99</a>
+                        <a href="" class="product-author">V/H/S/99</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book16.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Gã Hề Điên Loạn 2</a>
+                        <a href="" class="product-author">Terrifier 2</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book17.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Thỏ Gà rà kho báu</a>
+                        <a href="" class="product-author">Ben Stassen</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book18.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Wendell và Wild</a>
+                        <a href="" class="product-author">Wendell & Wild</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book19.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Thợ Săn Quỷ</a>
+                        <a href="" class="product-author">Chainsaw Man</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book20.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Kamen Rider Black Sun</a>
+                        <a href="" class="product-author">Shōtarō Ishinomori</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book21.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Lựa chọn của thái tử</a>
+                        <a href="" class="product-author">Young Royals</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book22.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Thìa Vàng</a>
+                        <a href="" class="product-author">The Golden Spoon</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book23.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Luật Sư 1000 Won</a>
+                        <a href="" class="product-author">One Dollar Lawyer</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book24.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Hợp Đồng Tình Yêu</a>
+                        <a href="" class="product-author">Love in Contract</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item is-hidden-desktop">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book25.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Reacher</a>
+                        <a href="" class="product-author">Reacher</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book26.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Người sau song sắt</a>
+                        <a href="" class="product-author">Inside Man</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book27.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Xác Sống</a>
+                        <a href="" class="product-author">The Walking Dead</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book28.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Truyện kinh dị Mỹ</a>
+                        <a href="" class="product-author">American Horror Story</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book29.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Sao Hỏa Tìm Mẹ</a>
+                        <a href="" class="product-author">Simon Wells</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item is-hidden-desktop">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="../images/search/book30.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-name">Tòa Án Kiếp Sau</a>
+                        <a href="" class="product-author">Albert Brooks</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <include src="./footer.html"></include>
+
+    <script>
+        (() => {
+            const includes = document.getElementsByTagName('include');
+            [].forEach.call(includes, i => {
+                let filePath = i.getAttribute('src');
+                fetch(filePath).then(file => {
+                    file.text().then(content => {
+                        i.insertAdjacentHTML('afterend', content);
+                        i.remove();
+                    });
+                });
+            });
+        })();
+
+        var scrollTrigger = 30;
+
+        window.onscroll = function () {
+            if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+                document.getElementsByTagName("header")[0].style.backgroundColor = "#2f0a61";
+            } else {
+                document.getElementsByTagName("header")[0].style.backgroundColor = "";
+            }
+        };
+
+        const btn_open = document.getElementById("btn-open");
+        const btn_close = document.getElementById("btn-close");
+        const searchImg_container = document.getElementById("searchImg-container");
+        const searchImg = document.getElementById("searchImg");
+
+        btn_open.addEventListener('click', ()=> {
+            searchImg_container.classList.add("show");
+        });
+        btn_close.addEventListener('click', ()=> {
+            searchImg_container.classList.remove("show");
+        });
+
+        searchImg_container.addEventListener("click", (e)=> {
+            if(!searchImg.contains(e.target)) {
+                btn_close.click();
+            }
+        })
+    </script>
+</body>
+</html>
