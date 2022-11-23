@@ -92,6 +92,7 @@ button#btn-open {
     left: 0;
     opacity: 0;
     pointer-events: none;
+    transition: all 0.25s ease-in-out;
 }
 #searchImg-container.show {
     opacity: 1;
@@ -102,10 +103,14 @@ button#btn-open {
     border-radius: 8px;
     max-width: 500px;
     position: relative;
-    top: 150px;
+    top: 0px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
+    transition: all 0.25s ease-in-out;
+}
+#searchImg-container.show #searchImg {
+    top: 150px;
 }
 #searchImg .searchImg-header {
     display: flex;
